@@ -16,7 +16,7 @@ The parent `terragrunt.hcl` contains the `skip=true` attribute, so it should not
 The child directory (`/child`) contains a simple `terragrunt.hcl` file which only includes the parent, an empty `main.tf` file to allow `terragrunt` to execute, and a simple `config.yml` file with a single key/value pair.
 
 ## Demonstration
-Run `terragrunt plan` in `/module`. It completes without error.
+Run `terragrunt plan` in `/child`. It completes without error.
 
 Run `terragrunt plan-all` in the repository root.
 It fails with an error due to it not finding a file at `${path_relative_to_include()}/config.yml`.
