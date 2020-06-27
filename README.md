@@ -1,5 +1,5 @@
-# Possible Terragrunt Issue
-This repo reproduces a possible inconsistency with how the `path_relative_*_include()` functions are handled when run with the `terragrunt *-all` commands.
+# Terragrunt #1237
+This repo reproduces a possible inconsistency with how the `path_relative_*_include()` functions are handled when run with the `terragrunt *-all` commands (see https://github.com/gruntwork-io/terragrunt/issues/1237).
 
 The docs for the `*-all` commands state that they run the base command in each subfolder.
 ```
